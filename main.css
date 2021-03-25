@@ -1,0 +1,226 @@
+.plans{
+    width: 80%;
+    margin: auto;
+}
+
+#product-overview {
+    background: linear-gradient(to top,rgba(80,60,18,0.6) 10%,transparent) , url('./images/freedom.jpg') center/cover no-repeat border-box , #ff1b68 ;
+    /* background-image: url("./images/freedom.jpg");
+    background-size: cover ;
+    background-repeat: no-repeat;
+    background-position: left 10% bottom 80%; 
+    background-origin: border-box; */
+    /* background-image: linear-gradient(45deg,red,blue); */
+    /* background-image: radial-gradient(circle at 20% 50%,red,blue);  */
+    width: 100%;
+    height: 45vh;
+    margin-top: 3.5rem;
+    position: relative;  
+}
+
+
+#product-overview h1 {
+    color: white;
+    font-family: 'Anton', sans-serif;
+    position: absolute;
+    bottom: 3%;
+    left: 3%;
+    font-size: 1.5rem;
+}
+
+.section-title {
+    color: #2ddf5c;
+    text-align: center;
+}
+
+
+/* h1 {
+    font-family: sans-serif;
+} */
+
+
+.plan {
+    background-color: #d5ffdc;
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem auto;
+    width: 70%;
+   vertical-align: middle;
+   border-radius: 10px;
+}
+
+.plan-highlight {
+    background-color: #19b84c  ;
+    color: white;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.5);
+}
+
+.plan__annotation {
+    background-color: white;
+    color: #19b84c;
+    padding: 0.6rem;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    font-size: 0.9rem;
+
+}
+
+.plan__title {
+    color: #0e4f1f;
+}
+ 
+.plan__price {
+    color: #858585;
+}
+
+.plan-highlight .plan__title {
+    color: white
+}
+.plan-highlight .plan__price {
+    color: #0e4f1f
+}
+
+article.plan li {
+    margin: 0.5rem 0px;
+    text-align: center;
+   
+    
+}
+
+
+article.plan ul {
+    text-align: center;
+    list-style: none;
+    margin:  0;
+    padding: 0 ;
+}
+
+#key-feautures {
+    
+    text-align: center;
+    background-color: #ff1b68;
+    margin-top: 3.7rem;
+    padding: 1rem;
+}
+
+#key-feautures .section-title {
+    color: white;
+    margin: 2rem;  
+}   
+
+#key-feautures ul {
+    padding: 0;
+    margin: 0;
+}
+.key-feauture__image {
+     background: #ffcede;
+      width: 8rem ;
+      height: 8rem;
+      border: 2px solid #424242;
+      border-radius: 50%;
+      margin: auto;
+      padding: 1.2rem;
+}
+
+#key-feautures li {
+    list-style: none;
+    width: 30%;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: top;
+    color: white ;
+    margin: auto;
+}
+
+
+.modal {
+    position: fixed;
+    display: none;
+    z-index: 200;
+    top: 20%;
+    left: 30%;
+    width: 40%;
+    background: white;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal__title {
+    text-align: center;
+    margin: 0 0 1rem 0;
+  }
+  
+  .modal__actions {
+    text-align: center;
+  }
+  
+  .modal__action {
+    border: 1px solid #0e4f1f;
+    background: #0e4f1f;
+    text-decoration: none;
+    color: white;
+    font: inherit;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
+  
+  .modal__action:hover,
+  .modal__action:active {
+    background: #2ddf5c;
+    border-color: #2ddf5c;
+  }
+  
+  .modal__action--negative {
+    background: red;
+    border-color: red;
+  }
+  
+  .modal__action--negative:hover,
+  .modal__action--negative:active {
+    background: #ff5454;
+    border-color: #ff5454;
+  }
+
+  
+@media (min-width:40rem) {
+
+    .plan__annotation{
+       font-size: 1.2rem;
+    }
+    #product-overview {
+        height: 50vh;
+        background-position: 50% 23%;
+    }
+    #product-overview h1 {
+        font-size: 3rem;
+        bottom: 0;
+        margin: 0.7rem 0;
+    } 
+
+    
+
+    #key-feautures li{
+        display: inline-block;
+    }
+}
+
+
+@media(min-width:57rem){
+
+    #product-overview {
+        height: 60vh;
+        background-position: 50% 23%;
+    }
+
+    .plans{
+        display: flex;
+    }
+
+    .plan {
+        width: 25vw;
+        margin-left: 0.2rem;
+        margin-right: 0.2rem;
+    }
+
+}

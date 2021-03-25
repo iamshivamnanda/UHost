@@ -1,0 +1,128 @@
+main {
+    padding: 2rem 0;
+}
+
+.background-image {
+    background: url('../images/plans-background.jpg') center/cover;
+    filter: grayscale(40%);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: -1;
+}
+
+.plans__details {
+    display: block;
+    text-decoration: none;
+    padding: 1.2rem;
+    margin: 1rem 0px;
+    background-color: rgb(218, 241, 183);
+    border: 5px solid #0e4f1f;
+    border-left: none;
+    width: 90%;
+    position: relative;
+
+}
+
+.plans__details:hover,
+.plans__details:active{
+    background-color: white;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    border-color: red;
+}
+
+.plans__details h1 {
+    color: black;
+    font-weight: bold;
+}
+
+.plans__details h2 {
+    color: rgb(105, 102, 102);
+}
+
+.plans__details p {
+    background-color: white;
+    color: black;
+    padding: 1.2rem;
+    border:  2px solid #0e4f1f;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.free_plan {
+    float: right;
+    /* margin-left:20% ; */
+    border-left: 5px solid #0e4f1f;
+    border-right: none;
+    text-align: right;
+
+
+}
+.plus_plan {
+    background-color: rgb(167, 218, 170);
+}
+
+.package_badge {
+    color: white !important;
+  display: inline-block;
+  font-size: 0.7rem;
+  background-color: #ff5454;
+  margin: auto;
+    padding: 0.6rem ;
+    border-radius: 5px;
+}
+
+.premimum_plan {
+    background-color: rgb(0, 75, 16);
+}
+
+.premimum_plan h1 {
+    color: white;
+}
+
+.premimum_plan:hover h1,
+.premimum_plan:active h1 {
+    color: black;
+}
+
+.premimum_plan  h2 {
+    color: rgb(197, 193, 193);
+}
+
+
+@media (min-width:40rem){
+    main {
+        margin-left: auto;
+        margin-right: auto;
+        padding: 2rem 0;
+        max-width: 1500px;
+    }
+    .package_badge {
+        position: absolute;
+        top: 0px;
+        right: 0;
+        margin: 1.2rem  ;
+    }
+}
+
+@media (min-width:30rem){
+    .plans__details{
+        width: 80%;
+    }
+}
+
+
+
+@media (min-width:1500px){
+    .plans__details {
+        border-left: 5px solid #0e4f1f;
+    }
+
+    .free_plan{
+        border-right: 5px solid #0e4f1f;
+
+    }
+
+}
