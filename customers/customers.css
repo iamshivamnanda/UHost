@@ -9,7 +9,7 @@
   }
   
   .testimonial:first-of-type {
-    padding-top: 3rem;
+    /* padding-top: 3rem; */
   }
 
   .testimonial__image-container{
