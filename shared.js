@@ -6,6 +6,8 @@ const planbttns = document.querySelectorAll('.plan button');
 const tooglebttn = document.querySelector('.toggle-button');
 const mobileNav = document.querySelector('.mobile-nav');
 
+const cta = document.querySelector('.main-nav__item--cta');
+
 const planbttnhandler = ()=>{
     modal.classList.add('open');
     backdrop.classList.add('open');
@@ -45,3 +47,14 @@ function tooglebttnhandler() {
 
 
 // backdrop.style.display = 'block';
+
+
+cta.addEventListener('animationstart',(event)=>{
+    console.log('animation started',event);
+});
+cta.addEventListener('animationend',(event)=>{
+    console.log('animation ended',event);
+});
+cta.addEventListener('animationiteration',(event)=>{
+    console.log('animation iteration',event);
+});

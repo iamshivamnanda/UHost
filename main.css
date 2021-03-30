@@ -135,7 +135,10 @@ article.plan ul {
 
 .modal {
     position: fixed;
-    display: none;
+    opacity: 0;
+    transform: translateY(-3rem);
+    transition: opacity 0.2s ease-out, transform 0.5s ease-out;
+    /* display: none; */
     z-index: 200;
     top: 20%;
     left: 30%;
@@ -224,3 +227,5 @@ article.plan ul {
     }
 
 }
+
+

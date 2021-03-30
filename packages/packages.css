@@ -21,6 +21,7 @@ main {
     border-left: none;
     width: 90%;
     position: relative;
+    overflow: hidden;
 
 }
 
@@ -29,6 +30,8 @@ main {
     background-color: white;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     border-color: red;
+    animation: push-up 1s ease-out forwards;
+
 }
 
 .plans__details h1 {
@@ -101,9 +104,13 @@ main {
     }
     .package_badge {
         position: absolute;
-        top: 0px;
+        top: 0;
         right: 0;
-        margin: 1.2rem  ;
+        margin: 0 ;
+        transform: rotateZ(45deg) translateX(3.5rem) translateY(-1rem);
+        transform-origin: center;
+        width: 12rem;
+        text-align: center;
     }
 }
 
@@ -125,4 +132,18 @@ main {
 
     }
 
+}
+
+@keyframes push-up {
+    0% {
+        transform: translateY(0);
+    }
+
+    33% {
+        transform: translateY(-1.5rem);
+    }
+    
+    100% {
+        transform: translateY(-1rem);
+    }
 }

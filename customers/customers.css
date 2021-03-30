@@ -16,13 +16,22 @@
     margin: auto;
       display: block;
       max-width: 600px;
-      width: 85%;
+      width: 75%;
       box-shadow: 3px 3px 5px 3px rgba(0, 0, 0, 0.3);
+      transform: skew(10deg) ;
+      overflow: hidden;
+
+  }
+
+  #customer-1:hover .testimonial__image-container{
+    animation: flip-customer 1s ease-out forwards;
   }
 
   .testimonial__image {
     width: 100%;
     vertical-align: top;
+    transform: skew(-10deg) scale(1.2) ;
+
   }
   
   .testimonial__info {
@@ -87,4 +96,16 @@
     text-align: left;
   }
   
+  }
+
+  @keyframes flip-customer{
+    0%{
+      transform: rotateY(0deg) skew(10deg);
+    }
+    50%{
+      transform: rotateY(160deg) skew(10deg);
+    }
+    100%{
+      transform: rotatey(360deg) skew(10deg);
+    }
   }

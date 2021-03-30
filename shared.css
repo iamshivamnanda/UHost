@@ -113,6 +113,10 @@ main{
     border-bottom: 5px solid white;
 }
 
+.main-nav__item--cta {
+   animation: wiggle 0.4s 3s 8 none ;
+}
+
 .main-nav__item--cta a ,
 .mobile-nav__item--cta a{
     color: white;
@@ -231,6 +235,8 @@ main{
 
   .open {
       display: block !important;
+      opacity: 1 !important;
+      transform: translateY(0) !important;
   }
 
   @media (min-width:40rem){
@@ -251,3 +257,18 @@ main{
         vertical-align: middle; */
     }
   }
+
+  @keyframes wiggle {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    50%{
+        transform: rotateZ(-10deg);
+
+    }
+
+    100% {
+        transform: rotateZ(10deg);
+
+    }
+}
