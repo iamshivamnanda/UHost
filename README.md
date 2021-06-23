@@ -15,6 +15,6 @@ Please make sure to update tests as appropriate.
 
 @Copyright Shivam Nanda
 
-[Click Here]: <https://shivamnanda436.github.io/UHost/>
+[Click Here]: <https://iamshivamnanda.github.io/UHost/>
 
 
